@@ -2359,10 +2359,10 @@
 
                     <menu label="&menu.arrangement.label;" aid="arrangementMenu" p:for="Shape,TargetSet">
                         <menupopup>
-                            <menuitem label="&menu.bring.to.front.label;" oncommand="this.parentNode.parentNode._controller.bringToFront()"/>
-                            <menuitem label="&menu.bring.forward.label;" oncommand="this.parentNode.parentNode._controller.bringForward()"/>
-                            <menuitem label="&menu.send.backward.label;" oncommand="this.parentNode.parentNode._controller.sendBackward()"/>
-                            <menuitem label="&menu.send.to.back.label;" oncommand="this.parentNode.parentNode._controller.sendToBack()"/>
+                            <menuitem label="&menu.bring.to.front.label;" key="bringToFrontKey" oncommand="this.parentNode.parentNode._controller.bringToFront()"/>
+                            <menuitem label="&menu.bring.forward.label;" key="bringForwardKey" oncommand="this.parentNode.parentNode._controller.bringForward()"/>
+                            <menuitem label="&menu.send.backward.label;" key="sendBackwardKey" oncommand="this.parentNode.parentNode._controller.sendBackward()"/>
+                            <menuitem label="&menu.send.to.back.label;" key="sendToBackKey" oncommand="this.parentNode.parentNode._controller.sendToBack()"/>
                         </menupopup>
                     </menu>
 

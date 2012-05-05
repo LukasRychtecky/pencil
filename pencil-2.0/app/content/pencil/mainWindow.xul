@@ -227,8 +227,8 @@
         <key id="bringToFrontKey2" command="bringToFrontCommand" modifiers="accel shift" key="}"/>
         <key id="bringForwardKey" command="bringForwardCommand" modifiers="accel" key="]"/>
         <key id="sendBackwardKey" command="sendBackwardCommand" modifiers="accel" key="["/>
-        <key id="sendToBackKey" command="sendToBackCommand" modifiers="accel shift" keycode="["/>
-        <key id="sendToBackKey2" command="sendToBackCommand" modifiers="accel shift" keycode="{"/>
+        <key id="sendToBackKey" command="sendToBackCommand" modifiers="accel shift" key="["/>
+        <key id="sendToBackKey2" command="sendToBackCommand" modifiers="accel shift" key="{"/>
 
         <key id="bringToFrontKey3" command="bringToFrontCommand" modifiers="accel shift" keycode="VK_HOME"/>
         <key id="bringForwardKey3" command="bringForwardCommand" modifiers="accel"         keycode="VK_HOME"/>
