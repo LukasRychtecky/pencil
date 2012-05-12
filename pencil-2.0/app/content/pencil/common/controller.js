@@ -1340,6 +1340,12 @@ Controller.prototype.sizeToContent = function (passedPage, askForPadding) {
     }
 };
 
+Controller.prototype.quit = function() {
+	if (!Pencil.controller.modified || Pencil.controller._confirmAndSaveDocument()) {
+		window.close();
+	}
+};
+
 Controller.prototype._exportAsLayout = function () {
     var page = this.getCurrentPage();
     var container = page._view.canvas.drawingLayer;

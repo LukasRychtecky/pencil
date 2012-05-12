@@ -136,6 +136,7 @@
         <command id="exportCommand" oncommand="Pencil.controller.exportDocument();"/>
         <command id="sizeToContentCommand" oncommand="Pencil.controller.sizeToContent(null, true);"/>
         <command id="printCommand" oncommand="Pencil.controller.printDocument();"/>
+        <command id="quitAppCommand" oncommand="Pencil.controller.quit();"/>
 
         <command id="reorderPagesCommand" oncommand="Pencil.controller.reorderPages();"/>
         <command id="editPagePropertiesCommand" oncommand="Pencil.handlePropertiesCommand();"/>
@@ -203,6 +204,7 @@
         <key id="exportPageKey" command="rasterizeCommand" modifiers="accel" key="E"/>
         <key id="exportDocumentKey" command="exportCommand" modifiers="accel shift" key="E"/>
         <key id="printKey" command="printCommand" modifiers="accel" key="P"/>
+        <key id="quitKey" command="quitAppCommand" modifiers="accel" key="Q"/>
 
         <key id="zoomInKey" command="zoomInCommand" modifiers="accel" key="="/>
         <key id="zoomInKey2" command="zoomInCommand" modifiers="accel shift" key="+"/>
@@ -298,7 +300,7 @@
                                     <menuseparator/>
                                     <menuitem class="menuitem-iconic print-document-menu" label="&menu.print.document.label;" command="printCommand" key="printKey"/>
                                     <menuseparator/>
-                                    <menuitem id="menu_FileQuitItem" class="menuitem-iconic exit-menu" label="&menu.exit.label;" oncommand="if (!Pencil.controller.modified || Pencil.controller._confirmAndSaveDocument()) window.close();"/>
+                                    <menuitem id="menu_FileQuitItem" class="menuitem-iconic exit-menu" label="&menu.exit.label;" command="quitAppCommand" key="quitKey"/>
                                 </menupopup>
                             </menu>
                             <menu id="edit-menu" label="&menu.edit.label;" accesskey="&menu.edit.accesskey;">
